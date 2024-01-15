@@ -1,0 +1,2771 @@
+{
+  "collapsedGroups": [],
+  "version": 7,
+  "t": "2024-01-15T17:33:37.3175215+02:00",
+  "blocking": false,
+  "queues": [],
+  "actions": [
+    {
+      "id": "d5a4308d-900a-4e47-899f-719ab21203c7",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Toggle camera",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "f24b2d6e-6f14-44a9-857b-5bfa45f5b483",
+          "id": "4b69a65a-8b70-454e-8bbd-1da18dc878c0",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "state": 2,
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "58aa05ab-5616-4c14-881b-bf4acd5881f2",
+          "weight": 0.0,
+          "type": 30,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "value": 2000,
+          "maxValue": 0,
+          "random": false,
+          "id": "cf81aa52-da6d-49f8-b743-96d29e26c64f",
+          "weight": 0.0,
+          "type": 1002,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "state": 2,
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "bb6ffab7-6ce0-4cb4-9376-d54b54ce9c29",
+          "weight": 0.0,
+          "type": 30,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "state": 2,
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "788aafa7-1df3-4b4e-968d-6368e0c35220",
+          "weight": 0.0,
+          "type": 40,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "19719480-4c94-4f36-a079-9f1ce0bef39c",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Text",
+      "group": "",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "a19c2ba2-21bf-43a0-a59f-e85e73523aeb",
+          "id": "d2e92d99-b96f-4aaf-9264-caf3d7f96547",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%user%, хуй будеш?",
+          "preferredAccount": 0,
+          "id": "8c7ef571-0b93-46de-9ce2-633c6d21a0a2",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "d649c4a7-9020-4a91-a3d9-92204394362c",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!created",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "7db74456-c49d-4e7c-a309-ffe0c9ba9b6b",
+          "id": "e2b120e8-a884-4039-b962-37c051061384",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 2,
+          "variable": "",
+          "id": "b1cb74de-7ee8-40b5-aa46-957d086eb413",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "url": "https://api.crunchprank.net/twitch/creation/%targetUser%",
+          "variableName": "accountCreated",
+          "headers": {},
+          "id": "8723cba2-9dae-4a4d-aaf6-d3de371e66f9",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "The account for %targetUser% was created on %accountCreated%",
+          "preferredAccount": 0,
+          "id": "fe60ecb5-7943-45bc-9bcf-40a7913b9cee",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "27b16b76-233f-4b52-9764-b52965f12ba9",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!date",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "8873e8a0-4080-4ee8-86c6-39072c024560",
+          "id": "2e155fe4-0a92-404d-ac90-2a50bf0ebc3c",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "The date is currently %date% for %broadcastUser%",
+          "preferredAccount": 0,
+          "id": "01f4c03f-ad96-466c-ad1f-8308dcd22e6e",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "id": "aa0e8338-9e0f-4776-90b6-86fa198f4c96",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "d5e3453a-a8d0-4f79-97f3-a516995313e2",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!followed",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "180b79ff-15e1-4fe1-8b76-87b8882ee0d7",
+          "id": "d65d3441-e5c6-4b24-8df9-f2e9a132a3fa",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "c97e702f-0d00-42f9-a67a-4b8f1886443b",
+          "weight": 0.0,
+          "type": 51,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "%user% you followed %broadcastUser% on %followDate%",
+          "preferredAccount": 0,
+          "id": "4a3daf31-46eb-4d6e-ada3-3c97c6b85fd2",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "id": "4790e89f-5305-4dc5-b27b-b6829a14caac",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "6b85dbde-fd70-4632-9566-b32a47506554",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!followers",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "08dfcc5e-c95d-4f32-aa52-d9b8013cf817",
+          "id": "21bf69e5-3805-49ec-b759-69c5b848bf49",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "url": "https://api.crunchprank.net/twitch/followcount%broadcastUserName%",
+          "variableName": "followerCount",
+          "headers": {},
+          "id": "4eb6159f-ba43-459e-b803-680c72720d7c",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "%broadcastUser% currently has %followerCount% followers",
+          "preferredAccount": 0,
+          "id": "e84ad2ca-17f3-48aa-8e0f-a837b195ffec",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "id": "7145edb7-9a1b-4d4d-8da6-ed915c3774fd",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "f69c3365-f986-4534-82e7-b9eefca8acd5",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!following",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "d1332b52-3f01-4679-80fd-51e4f8e88e06",
+          "id": "e0c48843-3e3e-47db-a945-bae757a03128",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "d1c59783-132f-4683-8328-43ecdb29dacc",
+          "weight": 0.0,
+          "type": 51,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "%user% you have ben following %broadcastUser% for %followAgeLong%",
+          "preferredAccount": 0,
+          "id": "36ac587e-c839-4d38-af3e-e57dfff4f15d",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "id": "6f4dcbef-67cc-45a3-936a-aa7d1089fde1",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "c3237f66-1eb0-4c88-adc5-8888c91a6c8a",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!stats",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "68b7eb67-a20f-47b6-b473-4679c41a87f1",
+          "id": "765844c6-2abb-4628-bf30-5ac8fb5422c3",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "url": "https://api.crunchprank.net/twitch/viewercount/%broadcastUserName%",
+          "variableName": "viewerCount",
+          "headers": {},
+          "id": "4add8214-2b03-42e2-b7c5-9fb0503ce953",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "url": "https://decapi.me/twitch/uptime/%broadcastUserName%",
+          "variableName": "uptime",
+          "headers": {},
+          "id": "176c4c67-6762-45e2-b17f-afc1526b6dd3",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "url": "https://decapi.me/twitch/game/%broadcastUserName%",
+          "variableName": "myGame",
+          "headers": {},
+          "id": "a874ae90-87c1-4d43-9037-b6ab75d945d1",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "url": "https://decapi.me/twitch/title/%broadcastUserName%",
+          "variableName": "myTitle",
+          "headers": {},
+          "id": "c735d89a-feaa-4c99-a1d5-e2782c505fde",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "text": "Game: %myGame% | Title: %myTitle%  | Uptime: %uptime% | Viewers: %viewerCount%",
+          "preferredAccount": 0,
+          "id": "f9835bb0-7e54-43af-91e2-c16c3dc60d5a",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "id": "19b968a6-5c12-4911-ab92-7d3642d62a62",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "c59fff75-6487-40b4-9493-ba935a1d688f",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!team",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "16296608-e713-459b-ac1e-233bd90d3ab5",
+          "id": "a9757b62-eca7-4d07-ab89-f21b3b2c89b2",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "url": "https://api.crunchprank.net/twitch/team_members/%input0%",
+          "variableName": "teamMembers",
+          "headers": {},
+          "id": "08ab2110-c498-449a-a41b-81b6a4271b60",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "value": "grabs a list of team members from named team",
+          "color": null,
+          "id": "b8b489fc-d196-4f3e-94f7-0d8ea9c05ad1",
+          "weight": 0.0,
+          "type": 1009,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "085aeef6-1c1f-44b4-b1b3-a923cccbbc14",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!time",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "ebe7ea8a-b670-4851-b452-3d867be0f42f",
+          "id": "417f527e-eb6d-4791-b887-b0e706f0ed6f",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "The time is currently %time% for %broadcastUser%",
+          "preferredAccount": 0,
+          "id": "d06b7a42-1675-490c-bc19-1d8d6f0a7b5e",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "id": "5a159f42-4ab3-4024-b3d2-f2d0cbb4a49c",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "f1966bb3-3319-4972-87f5-474f63e2a342",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!uptime",
+      "group": null,
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "080c8007-30cb-4c07-9989-ad8d1ee25a71",
+          "id": "c2dd13f1-9f6f-4960-93f3-e3f7e8d69e19",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "url": "https://decapi.me/twitch/uptime/%broadcastUserName%",
+          "variableName": "uptime",
+          "headers": {},
+          "id": "d34398b2-8d66-421f-9ecd-176ce7bad5be",
+          "weight": 0.0,
+          "type": 1007,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "%broadcastUser% has been live for %uptime%",
+          "preferredAccount": 0,
+          "id": "81f291ca-2598-40c6-95d4-84b1e44340f9",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "id": "ad0f04e7-1209-42b5-88db-0cd5accdfe53",
+          "weight": 0.0,
+          "type": 21,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "6940ddad-ba8f-4c4f-b737-990ca43dfbd2",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!тг",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "90e59c9f-39de-4e02-ae4b-bd3bc9172430",
+          "id": "e4d7afcc-9fce-4759-ac3e-a49dcc7d7930",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "Тут анонси стримів і моя голова: https://t.me/quarryck",
+          "preferredAccount": 0,
+          "id": "e98d7356-a8ab-482b-9745-9dd11e98d13c",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "state": 0,
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "361aeadf-95b5-4a03-b608-9acb524d35e4",
+          "weight": 0.0,
+          "type": 40,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "id": "f01b016b-5339-4c23-987f-8d88c06f24a7",
+          "weight": 0.0,
+          "type": 18,
+          "group": null,
+          "enabled": false,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "1ff56554-f68e-4c08-b9da-8bd57da568f4",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!інста",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "41b14ab1-76aa-412e-939a-25d272ba864f",
+          "id": "8474066f-bca0-4ae6-92f9-73453122d2ec",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "Тут викладаю добірну кринжу: https://www.instagram.com/quarry9221/",
+          "preferredAccount": 0,
+          "id": "b2976ee1-5e49-4e1b-a997-a9638b128d04",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ceb0d10c-759d-4ec3-9783-9053029ecff3",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!люрк",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "c4153237-6c72-4a72-bc2f-9df9ca631311",
+          "id": "b6452964-2651-4687-9eb6-26e6d247d962",
+          "type": 402,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "Залишаючись в тіні, як нічний ловець, я тут. Моя присутність незрима, але це не означає, що мене немає. Я люркую, спостерігаю, вбираю в себе кожне слово, кожну емоцію. Я не тільки спостерігач, я душа чату, тихий вітерець знань і суперечок, що проноситься поміж повідомлень. Я - люрк, вічний спостерігач в просторах цифрового світу. 🕵️‍♂️🌌",
+          "preferredAccount": 0,
+          "id": "cfdb77de-e864-4084-9986-8041dbbf01b4",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "306e37a6-9022-4c0d-8ef8-54bd7ff63006",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "донателло",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "bbeecf03-fa00-46e3-8f75-4d69efb2507b",
+          "id": "0f725af1-483a-4ef1-8345-ed63b8ee26ba",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "Підписка на Донателло від 30 грн! https://donatello.to/Quarry/tiers",
+          "preferredAccount": 0,
+          "id": "b90354f1-3977-4f30-968e-ab4584cdd4d0",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "5c89e54e-aaf4-4513-b3ab-0ed326035b11",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!дс",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "4096c1d9-393e-4050-9168-bfb0f0d2a597",
+          "id": "1b9add5a-f47c-4a4a-ac70-8df908fc5068",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "Наш Discord сервер: https://discord.gg/8Jd228AEHr",
+          "preferredAccount": 0,
+          "id": "92c5098d-984d-4eee-bc31-174c08d702d0",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ecc6e123-997d-4a68-9a1e-128fe8c45194",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!пук",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "b4bee8a6-05a6-43c3-87ba-c5a443437ff9",
+          "id": "5da13ae4-ab3e-4ccf-89ef-8254737905e3",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "userLogin": "%user%",
+          "duration": "1",
+          "reason": "Пук і всьо",
+          "id": "87d1c44b-246e-4101-801d-22a663d5a156",
+          "weight": 0.0,
+          "type": 20,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "48eab029-3843-4e34-9e4c-10583733d8d2",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "!дупа",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "9478bc0c-bf06-47dc-bb68-25c5267fe26c",
+          "id": "953fdc73-0e83-4bce-8640-e99dc48e974b",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%user% хотів відправити в дупу когось, але згадав що fisting is 300 bucks і пішов сам",
+          "preferredAccount": 0,
+          "id": "9f79ee61-dbcf-4360-88f8-8319271e5e1c",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "59898680-89c3-4041-8f55-700e94f51e03",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "пз",
+      "group": "Команди",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "a4bbe8cf-c719-43ac-bc5c-56897f4bddc1",
+          "id": "e38e27e7-e4de-49a1-86e3-29b01f7e4a18",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "06f9f429-3741-4703-a10c-c70aa457240b",
+          "id": "7748a2d3-d89b-4f27-b77d-f9197c1de56f",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "17f720ad-7710-457a-9cf7-f956fd486abf",
+          "id": "324ce529-c19c-4bc5-abed-83224fc35240",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "c2333663-d7c8-45fe-8bc3-0327ba216cac",
+          "id": "11e76405-fc1d-45cb-9d38-467691fcb0d9",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "6ab2562d-e8ee-4cb0-8ae4-21b41da11b91",
+          "id": "8de5cb4a-ced8-4fc0-b487-3e142a9af9d4",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "0de20879-5542-4287-8a47-02203853b3cd",
+          "id": "1f69dbcc-082b-4c1b-9965-262550ad78e3",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "9713bb11-0f0d-4109-b300-a715b4df1b7b",
+          "id": "daddfd17-e500-49c9-b318-90b38e405f06",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "83e24ff5-e612-477a-967d-f94aeab0aa9a",
+          "id": "a5679b4e-a25d-406c-b9b6-27151ee73fbb",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "ad428532-baeb-42e6-9b6c-53324994fd15",
+          "id": "6637da0b-e42e-4ddf-b39c-fa4a80291f89",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "beb37e7c-968f-4862-b522-132bb6c0bf7f",
+          "id": "1ae05d05-d4b3-4843-8b43-df94ae99dfcc",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "c2333663-d7c8-45fe-8bc3-0327ba216cac",
+          "id": "1a4a4a4f-45f6-4c1f-82cd-d6ff0d8e5a3f",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "f1dfd454-8724-4e00-8a40-b60c3c2108ce",
+          "id": "3a8d4d16-0084-4e08-a0ed-5718b24555cd",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "c8d9b0e9-f597-48b4-aeef-cda1ea227e04",
+          "id": "925bda74-efa8-4632-b9fe-f8c7d7555323",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        },
+        {
+          "commandId": "60c6a93f-10e7-4c1b-b6c2-c54dd0bf0784",
+          "id": "91220ebc-f354-424c-be04-996675415b14",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%user%  trembaaIDI",
+          "preferredAccount": 1,
+          "replyId": "%msgId%",
+          "id": "ec979281-a519-42e1-9c07-ac1eaae30f3f",
+          "weight": 0.0,
+          "type": 560,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "a5056ec7-9da0-4914-93fe-87ef3b66a0ac",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Current points per user",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "86a9031a-cc0c-49ac-acd9-66e501e7de4e",
+          "id": "62379eaf-ded6-4a31-8912-5a89dcc245de",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "source": 1,
+          "variableName": "points",
+          "persisted": true,
+          "destinationVariable": "points",
+          "defaultValue": 0,
+          "id": "b4a836d7-0005-41ad-bb00-352190403608",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "e2d08127-6423-45cb-b01b-040d1bc50624",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": false,
+          "index": 0
+        },
+        {
+          "text": "%user%, у тебе морквина розміром %points% см.",
+          "preferredAccount": 0,
+          "id": "141d803c-5258-46a6-ad70-18a380fcb3d9",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ee78dfca-a366-469f-a13a-52f0e54afa5e",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Addpoints (for Streamer / Mod)",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "a573ff69-0f1d-47ff-8a47-8b08f5da2cef",
+          "id": "c8589192-7e35-418f-9e0a-33a52b4f3b2f",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%pointstarget%, now has %points% %pointsname%.",
+          "preferredAccount": 0,
+          "id": "cde5e617-2555-4629-beb2-55958a85ed77",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "202549d5-bf9d-465e-b08d-400064c2dc35",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBpbnQgbmV3cG9pbnRzOw0KICAgICAgICAvLyBzcGxpdCB1cCB0aGUgYXJndW1lbnRzIGludG8gdXNlciBhbmQgcG9pbnRzDQogICAgICAgIHN0cmluZyBpbnB1dHJhdyA9IGFyZ3NbInJhd0lucHV0Il0uVG9TdHJpbmcoKTsNCiAgICAgICAgY2hhcltdIGNoYXJTZXBhcmF0b3JzID0gbmV3IGNoYXJbXXsnICd9Ow0KICAgICAgICBzdHJpbmdbXSBpbnB1dGFyZ3MgPSBpbnB1dHJhdy5TcGxpdChjaGFyU2VwYXJhdG9ycywgU3RyaW5nU3BsaXRPcHRpb25zLlJlbW92ZUVtcHR5RW50cmllcyk7DQogICAgICAgIC8vUmVtb3ZlIHRoZSBAIGlmIHNwZWNpZmllZCBiZWZvcmUgdXNlcg0KICAgICAgICBzdHJpbmcgdXNlciA9IGlucHV0YXJnc1swXS5Ub1N0cmluZygpOw0KICAgICAgICAvL0NoZWNrIGlmIHdlIHdhbnQgdG8gYWRkIHBvaW50cyB0byBhbGwgLSBpZiBzbyBqdXN0IGFkZCB0byBnbG9iYWwgYW5kIGxldCB0aGUgdGltZWQgZXZlbnQgcGljayB1cCBvbiB0aGlzLiBXZSByZXR1cm4gZmFsc2Ugc28gd2UgZG8gbm90IGNvbnRpbnVlIGV4ZWN1dGlvbi4NCiAgICAgICAgaWYgKHVzZXI9PSJhbGwiKQ0KICAgICAgICB7DQogICAgICAgICAgICBpZiAoaW50LlRyeVBhcnNlKGlucHV0YXJnc1sxXSwgb3V0IG5ld3BvaW50cykpDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgaW50IGdsb2JhbGFkZCA9IENQSC5HZXRHbG9iYWxWYXI8aW50PigiZ2xvYmFscG9pbnRzYWRkIiwgdHJ1ZSk7DQoJCQkJZ2xvYmFsYWRkPWdsb2JhbGFkZCtuZXdwb2ludHM7DQogICAgICAgICAgICAgICAgQ1BILlNldEdsb2JhbFZhcigiZ2xvYmFscG9pbnRzYWRkIiwgZ2xvYmFsYWRkLCB0cnVlKTsNCgkJCQl2YXIgcG9pbnRzbmFtZSA9IENQSC5HZXRHbG9iYWxWYXI8c3RyaW5nPigicG9pbnRzbmFtZSIsIHRydWUpOw0KCQkJCUNQSC5TZW5kTWVzc2FnZShuZXdwb2ludHMuVG9TdHJpbmcoKSsiICIrcG9pbnRzbmFtZSsgIiBhZGRlZCBmb3IgcXVldWluZyB1cCBmb3IgYWRkaW5nIGZvciBhbGwgcGVvcGxlIGhlcmUuIFRoaXMgY2FuIHRha2UgdXAgdG8gNSBtaW51dGVzIG9mIG9ubGluZSB0aW1lIHRvIHByb2Nlc3MiKTsNCiAgICAgICAgICAgIH0NCg0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQoNCiAgICAgICAgaWYgKHVzZXIuU3Vic3RyaW5nKDAsIDEpID09ICJAIikNCiAgICAgICAgew0KCQkNCiAgICAgICAgICAgIHVzZXIgPSB1c2VyLlJlbW92ZSgwLCAxKTsNCgkJCQ0KCQkNCiAgICAgICAgfQ0KDQogICAgICAgIC8vR2V0IGN1cnJlbnQgcG9pbnRzDQogICAgICAgIGludCBjdXJyZW50cG9pbnRzID0gQ1BILkdldFVzZXJWYXI8aW50Pih1c2VyLCAicG9pbnRzIiwgdHJ1ZSk7DQogICAgICAgIC8vVGVzdCB0byBzZWUgaWYgd2UgaGF2ZSBhIHZhbGlkIGFyZ3VtZW50IGhlcmUgdG8gYWRkLg0KICAgICAgICBpZiAoaW50LlRyeVBhcnNlKGlucHV0YXJnc1sxXSwgb3V0IG5ld3BvaW50cykpDQogICAgICAgIHsNCiAgICAgICAgICAgIC8vQWRkIHRoZSBwb2ludHMgYW5kIHNldCBpdCBhcyBhbiBhcmd1bWVudCBhbmQgc2V0IHRvIHVzZXIuDQogICAgICAgICAgICBuZXdwb2ludHMgKz0gY3VycmVudHBvaW50czsNCiAgICAgICAgICAgIGlmIChuZXdwb2ludHMgPCAwKQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIG5ld3BvaW50cyA9IDA7DQogICAgICAgICAgICB9DQoNCiAgICAgICAgICAgIENQSC5TZXRVc2VyVmFyKHVzZXIsICJwb2ludHMiLCBuZXdwb2ludHMsIHRydWUpOw0KICAgICAgICAgICAgLy9TZXQgYXJndW1lbnRzIGZvciBtZXNzYWdlDQogICAgICAgICAgICBDUEguU2V0QXJndW1lbnQoInBvaW50cyIsIG5ld3BvaW50cyk7DQogICAgICAgICAgICBDUEguU2V0QXJndW1lbnQoInBvaW50c3RhcmdldCIsIHVzZXIpOw0KICAgICAgICAgICAgcmV0dXJuIHRydWU7DQogICAgICAgIH0NCiAgICAgICAgZWxzZQ0KICAgICAgICB7DQogICAgICAgICAgICBDUEguU2VuZE1lc3NhZ2UoIk5vIHZhbGlkIGFtb3VudCBzZWxlY3RlZCIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "ef1e9050-8373-4c96-b792-c1deb9360a13",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "129902d2-e99d-46b5-a764-c96526858769",
+      "queue": null,
+      "enabled": false,
+      "excludeFromHistory": false,
+      "name": "Points-timed",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "source": 0,
+          "variableName": "globalpointsadd",
+          "persisted": true,
+          "destinationVariable": "globalpointsadd",
+          "defaultValue": 0,
+          "id": "a9aee76a-f897-4e4f-b6fd-7d0e2a14b439",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIC8vIHBvaW50cyB0byBhZGQgLSB1cGRhdGUgaGVyZSBpZiB5b3Ugd2FudCBtb3JlIHRoYW4gMSBwb2ludCBhZGRlZCBldmVyeSA1IG1pbnV0ZXMNCiAgICAgICAgaW50IHBvaW50c3RvYWRkID0gMTA7DQogICAgICAgIC8vIGltcG9ydCB0aGUgcHJlc2VudCB2aWV3ZXJzIGxpc3QNCiAgICAgICAgdmFyIHVzZXJzID0gKExpc3Q8RGljdGlvbmFyeTxzdHJpbmcsIG9iamVjdD4+KWFyZ3NbInVzZXJzIl07DQogICAgICAgIC8vT25seSBnaXZlIHBvaW50cyBpZiB5b3UgYXJlIGxpdmUhDQogICAgICAgIC8vIC0gdGhpcyB0aW1lIGZvciB0ZXN0aW5nIGluc3RlYWQgaWYgKGFyZ3NbImlzTGl2ZSJdLlRvU3RyaW5nKCkgPT0gIkZhbHNlIikNCiAgICAgICAgaWYgKGFyZ3NbImlzTGl2ZSJdLlRvU3RyaW5nKCkgPT0gIlRydWUiKQ0KICAgICAgICB7DQogICAgICAgICAgICBpbnQgcG9pbnRzLCBwb2ludHNvdXQ7DQogICAgICAgICAgICBzdHJpbmcgY3VycmVudHVzZXI7DQogICAgICAgICAgICBpbnQgZ2xvYmFsYWRkID0gQ1BILkdldEdsb2JhbFZhcjxpbnQ+KCJnbG9iYWxwb2ludHNhZGQiLCB0cnVlKTsNCiAgICAgICAgICAgIC8vIEdvIHRocm91Z2ggZWFjaCB2aWV3ZXIgYW5kIHByb2Nlc3MgcG9pbnRzIGFkZGl0aW9uLg0KICAgICAgICAgICAgZm9yIChpbnQgaSA9IDA7IGkgPCB1c2Vycy5Db3VudDsgaSsrKQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIC8vIFJlYWQgaW4gY3VycmVudCBwb2ludHMgYW5kIGFkZCAxDQogICAgICAgICAgICAgICAgY3VycmVudHVzZXIgPSB1c2Vyc1tpXVsidXNlck5hbWUiXS5Ub1N0cmluZygpOw0KICAgICAgICAgICAgICAgIHBvaW50cyA9IENQSC5HZXRVc2VyVmFyPGludD4oY3VycmVudHVzZXIsICJwb2ludHMiLCB0cnVlKTsNCiAgICAgICAgICAgICAgICBwb2ludHMgPSBwb2ludHMgKyBwb2ludHN0b2FkZDsNCiAgICAgICAgICAgICAgICAvL0FkZCBhbnkgZ2xvYmFsIGFkZHMgdG9vDQogICAgICAgICAgICAgICAgcG9pbnRzID0gcG9pbnRzICsgZ2xvYmFsYWRkOw0KICAgICAgICAgICAgICAgIENQSC5TZXRVc2VyVmFyKGN1cnJlbnR1c2VyLCAicG9pbnRzIiwgcG9pbnRzLCB0cnVlKTsNCiAgICAgICAgICAgIH0NCg0KICAgICAgICAgICAgLy9yZXBvcnQgdGhhdCBnbG9iYWwgYWRkIGhhcyB3b3JrZWQgYW5kIHNldCBnbG9iYWwgYmFjayB0byAwDQogICAgICAgICAgICBpZiAoZ2xvYmFsYWRkID4gMCkNCiAgICAgICAgICAgIHsNCgkJCQl2YXIgcG9pbnRzbmFtZSA9IENQSC5HZXRHbG9iYWxWYXI8c3RyaW5nPigicG9pbnRzbmFtZSIsIHRydWUpOw0KICAgICAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZSgiQWRkZWQgIiArIGdsb2JhbGFkZC5Ub1N0cmluZygpICsgIiAiK3BvaW50c25hbWUrIiB0byBhbGwgdXNlcnMgaGVyZSIpOw0KCQkJCUNQSC5TZXRHbG9iYWxWYXIoImdsb2JhbHBvaW50c2FkZCIsMCwgdHJ1ZSk7DQogICAgICAgICAgICB9DQogICAgICAgIH0NCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "fb206de4-e30e-49f4-858a-dc467c396b24",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "bb25a0df-7854-48da-98fb-c413501bfa01",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Setpoints (for Streamer / Mod)",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "d68e1f7e-f624-44f5-9cc4-166de54bee01",
+          "id": "327f6d53-84e3-4ab6-b810-aac8650e36b0",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "27c6be41-012e-4051-9a73-8121b62ea076",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "Addpoints (for Streamer / Mod) (Copy)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICAvLyBzcGxpdCB1cCB0aGUgYXJndW1lbnRzIGludG8gdXNlciBhbmQgcG9pbnRzDQogICAgICAgIHN0cmluZyBpbnB1dHJhdyA9IGFyZ3NbInJhd0lucHV0Il0uVG9TdHJpbmcoKTsNCiAgICAgICAgY2hhcltdIGNoYXJTZXBhcmF0b3JzID0gbmV3IGNoYXJbXXsnICd9Ow0KICAgICAgICBzdHJpbmdbXSBpbnB1dGFyZ3MgPSBpbnB1dHJhdy5TcGxpdChjaGFyU2VwYXJhdG9ycywgU3RyaW5nU3BsaXRPcHRpb25zLlJlbW92ZUVtcHR5RW50cmllcyk7DQogICAgICAgIC8vUmVtb3ZlIHRoZSBAIGlmIHNwZWNpZmllZCBiZWZvcmUgdXNlcg0KICAgICAgICBzdHJpbmcgdXNlciA9IGlucHV0YXJnc1swXS5Ub1N0cmluZygpOw0KICAgICAgICBpZiAodXNlci5TdWJzdHJpbmcoMCwgMSkgPT0gQCJAIikNCiAgICAgICAgew0KICAgICAgICAgICAgdXNlciA9IHVzZXIuUmVtb3ZlKDAsIDEpOw0KICAgICAgICB9DQoNCiAgICAgICAgLy9HZXQgY3VycmVudCBwb2ludHMNCiAgICAgICAgaW50IGN1cnJlbnRwb2ludHMgPSBDUEguR2V0VXNlclZhcjxpbnQ+KHVzZXIsICJwb2ludHMiLCB0cnVlKTsNCiAgICAgICAgLy9UZXN0IHRvIHNlZSBpZiB3ZSBoYXZlIGEgdmFsaWQgYXJndW1lbnQgaGVyZSB0byBzZXQuDQogICAgICAgIGludCBuZXdwb2ludHM7DQogICAgICAgIGlmIChpbnQuVHJ5UGFyc2UoaW5wdXRhcmdzWzFdLCBvdXQgbmV3cG9pbnRzKSkNCiAgICAgICAgew0KICAgICAgICAgICAgLy9tYWtlIHN1cmUgd2UncmUgbm90IHNldHRpbmcgYSBuZWdhdGl2ZSBudW1iZXIuDQogICAgICAgICAgICBpZiAobmV3cG9pbnRzIDwgMCkNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICBuZXdwb2ludHMgPSAwOw0KICAgICAgICAgICAgfQ0KDQogICAgICAgICAgICBDUEguU2V0VXNlclZhcih1c2VyLCAicG9pbnRzIiwgbmV3cG9pbnRzLCB0cnVlKTsNCiAgICAgICAgICAgIC8vU2V0IGFyZ3VtZW50cyBmb3IgbWVzc2FnZQ0KICAgICAgICAgICAgQ1BILlNldEFyZ3VtZW50KCJwb2ludHMiLCBuZXdwb2ludHMpOw0KICAgICAgICAgICAgQ1BILlNldEFyZ3VtZW50KCJwb2ludHN0YXJnZXQiLCB1c2VyKTsNCiAgICAgICAgICAgIHJldHVybiB0cnVlOw0KICAgICAgICB9DQogICAgICAgIGVsc2UNCiAgICAgICAgew0KICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKCJObyBhIHZhbGlkIGFtb3VudCBzZWxlY3RlZCIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "2ed8b35b-ce87-42d2-a706-45132fc422fe",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "text": "%pointstarget%, now has %points% %pointsname%.",
+          "preferredAccount": 0,
+          "id": "7ac66025-94ae-440c-9329-77cb68bd8fd2",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "d9b058bb-8e64-43db-9847-f6eac0b0881a",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Points-sampleredeem",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "source": 1,
+          "variableName": "points",
+          "persisted": true,
+          "destinationVariable": "points",
+          "defaultValue": 0,
+          "id": "d07dd886-1d36-4707-b31e-2cc4a627da77",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "text": "%user%, you have spent 1 %pointsname% on this awesome redeem and have %points% %pointsname% left.",
+          "preferredAccount": 0,
+          "id": "2f834d5d-f7f2-466c-8548-300c34195f25",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "variableName": "points",
+          "operation": 4,
+          "value": "1",
+          "actionId": null,
+          "runImmediately": true,
+          "afterAction": 1,
+          "elseActionId": null,
+          "elseRunImmediately": true,
+          "elseAfterAction": 0,
+          "autoType": false,
+          "id": "bf837391-17a4-4b0a-92c5-d85748205dcd",
+          "weight": 0.0,
+          "type": 120,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "source": 1,
+          "variableName": "points",
+          "persisted": true,
+          "destinationVariable": "points",
+          "defaultValue": 0,
+          "id": "63f8741f-bc6a-40cc-940b-a15b4cc974ff",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "bb670e96-2f82-4538-99fc-7be21d7d2b52",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "destination": 1,
+          "variableName": "points",
+          "persisted": true,
+          "source": 2,
+          "value": -1,
+          "id": "e08643c7-d292-4e36-a99a-87ad544092d8",
+          "weight": 0.0,
+          "type": 122,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b8cc78dd-56ed-45ef-bdc2-66d9a4c400e1",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "pointsname",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "0cc15896-3f77-4308-9b96-514752429c0e",
+          "id": "e9ff94a0-5083-48e3-a70b-f15d89d3157e",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "destination": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "source": 0,
+          "value": "rawInput",
+          "id": "1cdca46b-f398-44f8-bf60-a262a182bb81",
+          "weight": 0.0,
+          "type": 122,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "84d45344-9f15-4248-814e-e934aa43a9e7",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "getpointsname",
+      "group": "Bot points",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "29b5ce5c-6348-4adf-9328-55cd04c8c5bf",
+          "id": "0d19a20e-93ef-4560-902d-08ea2b371448",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "7e36799f-164c-463a-817b-d585d0651427",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "text": "Current points name is %pointsname%",
+          "preferredAccount": 0,
+          "id": "39da93a2-fa49-4b20-905d-0e4d23aef8e6",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "8c83f7e0-233c-4c36-9a34-27e6e3734c30",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Зміна розміру",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "8e498897-5e50-4acd-a36d-b71a5893456a",
+          "id": "79b2eb99-af78-4e0a-931a-e086769da620",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCgkNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIGludCBuZXdwb2ludHM7DQoNCiAgICAgICAgdmFyIGJ1ZmYgPSBuZXcgUmFuZG9tKCk7DQogICAgICAgIGludCBwb2ludHNhZGQgPSBidWZmLk5leHQoLTEwLDEwKTsNCiAgICAgICAgdmFyIHVzZXIgPSBhcmdzWyJ1c2VyIl0uVG9TdHJpbmcoKTsNCiAgICAgICAgRGF0ZVRpbWUgdGlja0RhdGUgPSBDUEguR2V0VXNlclZhcjxEYXRlVGltZT4odXNlciwgInRpY2tEYXRlIiwgdHJ1ZSk7DQogICAgICAgIC8vIHNwbGl0IHVwIHRoZSBhcmd1bWVudHMgaW50byB1c2VyIGFuZCBwb2ludHMNCiAgICAgICAgc3RyaW5nIGlucHV0cmF3ID0gcG9pbnRzYWRkLlRvU3RyaW5nKCk7DQogICAgICAgIC8vUmVtb3ZlIHRoZSBAIGlmIHNwZWNpZmllZCBiZWZvcmUgdXNlcg0KICAgICAgICAvL0NoZWNrIGlmIHdlIHdhbnQgdG8gYWRkIHBvaW50cyB0byBhbGwgLSBpZiBzbyBqdXN0IGFkZCB0byBnbG9iYWwgYW5kIGxldCB0aGUgdGltZWQgZXZlbnQgcGljayB1cCBvbiB0aGlzLiBXZSByZXR1cm4gZmFsc2Ugc28gd2UgZG8gbm90IGNvbnRpbnVlIGV4ZWN1dGlvbi4NCg0KICAgICAgICBpZiAodXNlci5TdWJzdHJpbmcoMCwgMSkgPT0gIkAiKQ0KICAgICAgICB7DQogICAgDQogICAgICAgICAgICB1c2VyID0gdXNlci5SZW1vdmUoMCwgMSk7DQogICAgDQogICAgICAgIH0NCg0KICAgICAgICAvL0dldCBjdXJyZW50IHBvaW5jdg0KICAgICAgICBpbnQgY3VycmVudHBvaW50cyA9IENQSC5HZXRVc2VyVmFyPGludD4odXNlciwgInBvaW50cyIsIHRydWUpOw0KICAgICAgICB2YXIgbGVhZGVyQm9hcmRHYW1lID0gQ1BILkdldEdsb2JhbFZhcjxEaWN0aW9uYXJ5PHN0cmluZywgaW50Pj4oItCj0YfQsNGB0L3QuNC60LgiLCB0cnVlKTsNCg0KICAgICAgICAvL0NQSC5TZW5kTWVzc2FnZSgi0J/RgNC40LrQvtC7Iik7DQogICAgICAgIGludCBpc1JlZ2lzdGVyZWQgPSBDUEguR2V0VXNlclZhcjxpbnQ+KHVzZXIsICJpc1JlZ2lzdGVyZWQiLCB0cnVlKTsNCiAgICAgICAgaWYgKGlzUmVnaXN0ZXJlZCA9PSAwKQ0KICAgICAgICB7DQogICAgICAgIAlDUEguU2VuZE1lc3NhZ2UoItCS0Lgg0L3QtSDQv9GA0L7QudGI0LvQuCDRgNC10ZTRgdGC0YDQsNGG0ZbRjiwg0LLQstC10LTRltGC0Ywg0LrQvtC80LDQvdC00YMgIXJlZyDQsNCx0L4gIdGA0LXRlNGB0YLRgNCw0YbRltGPINGWINGB0L/RgNC+0LHRg9C50YLQtSDRidC1INGA0LDQtyIpOw0KICAgICAgICAJcmV0dXJuIHRydWU7DQogICAgICAgIH0NCiAgICAgICAgLy9UZXN0IHRvIHNlZSBpZiB3ZSBoYXZlIGEgdmFsaWQgYXJndW1lbnQgaGVyZSB0byBhZGQuDQogICAgICAgIA0KICAgICAgICBpZiAoaW50LlRyeVBhcnNlKGlucHV0cmF3LCBvdXQgbmV3cG9pbnRzKSkNCiAgICAgICAgew0KICAgICAgICAgICAgDQogICAgICAgICAgICAvL0FkZCB0aGUgcG9pbnRzIGFuZCBzZXQgaXQgYXMgYW4gYXJndW1lbnQgYW5kIHNldCB0byB1c2VyLg0KICAgICAgICAgICAgbmV3cG9pbnRzICs9IGN1cnJlbnRwb2ludHM7DQoNCiAgICAgICAgICAgIENQSC5TZXRVc2VyVmFyKHVzZXIsICJwb2ludHMiLCBuZXdwb2ludHMsIHRydWUpOw0KICAgICAgICAgICAgLy9TZXQgYXJndW1lbnRzIGZvciBtZXNzYWdlDQogICAgICAgICAgICBDUEguU2V0QXJndW1lbnQoInBvaW50cyIsIG5ld3BvaW50cyk7DQogICAgICAgICAgICBDUEguU2V0QXJndW1lbnQoInBvaW50c3RhcmdldCIsIHVzZXIpOw0KICAgICAgICAgICANCiAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZSh1c2VyICsgIiwg0YLQstC+0Y8g0LzQvtGA0LrQstC40L3QsCDQt9C80ZbQvdC40LvQsNGB0Ywg0L3QsCAiICsgcG9pbnRzYWRkICsgICIg0YHQvC4gIiArICLQotC10L/QtdGAINCy0L7QvdCwOiAiICsgbmV3cG9pbnRzICsgIiDRgdC8IiApOw0KICAgICAgICAgICAgDQogICAgICAgICAgICB0aWNrRGF0ZSA9IERhdGVUaW1lLk5vdzsNCiAgICAgICAgICAgIENQSC5TZXRVc2VyVmFyKHVzZXIsICJ0aWNrRGF0ZSIsIHRpY2tEYXRlLCB0cnVlKTsNCiAgICAgICAgICAgIENQSC5TZXRBcmd1bWVudCgidGlja0RhdGUiLCB0aWNrRGF0ZSk7DQogICAgICAgICAgICANCiAgICAgICAgICAgIGZvcmVhY2ggKHZhciBrdnAgaW4gbGVhZGVyQm9hcmRHYW1lKQ0KCQkJew0KCQkJCWlmIChrdnAuS2V5ID09IHVzZXIpDQoJCQkJCXsNCgkJCQkJCWxlYWRlckJvYXJkR2FtZVt1c2VyXSA9IG5ld3BvaW50czsNCgkJCQkJCUNQSC5TZXRHbG9iYWxWYXIoItCj0YfQsNGB0L3QuNC60LgiLCBsZWFkZXJCb2FyZEdhbWUsIHRydWUpOw0KCQkJCQl9DQoJCQl9DQogICAgICAgICAgICANCiAgICAgICAgICAgIHJldHVybiB0cnVlOw0KICAgICAgICB9DQogICAgICAgIGVsc2UNCiAgICAgICAgew0KICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKCJObyB2YWxpZCBhbW91bnQgc2VsZWN0ZWQiKTsNCiAgICAgICAgICAgIHJldHVybiBmYWxzZTsNCiAgICAgICAgfQ0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "bc746b13-7152-4ace-b210-c7203d93e128",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQoJcHVibGljIGJvb2wgRXhlY3V0ZSgpDQoJew0KCQlEYXRlVGltZSBjdXJyZW50RGF0ZSA9IERhdGVUaW1lLk5vdzsNCgkJdmFyIHVzZXIgPSBhcmdzWyJ1c2VyIl0uVG9TdHJpbmcoKTsNCgkJRGF0ZVRpbWUgdGlja0RhdGUgPSBDUEguR2V0VXNlclZhcjxEYXRlVGltZT4odXNlciwgInRpY2tEYXRlIiwgdHJ1ZSk7DQoJCQ0KCQlpZiAoY3VycmVudERhdGUgLSB0aWNrRGF0ZSA8IFRpbWVTcGFuLkZyb21Ib3VycygyNCkpDQoJCXsNCgkJCUNQSC5TZW5kTWVzc2FnZSgi0KLQuCDQvNC+0LbQtdGIINCy0LjQutC+0YDQuNGB0YLQvtCy0YPQstCw0YLQuCDRhtGOINC60L7QvNCw0L3QtNGDINC+0LTQuNC9INGA0LDQtyDQvdCwINC00L7QsdGDLiIpOw0KCQkJcmV0dXJuIGZhbHNlOw0KCQl9DQoJCXJldHVybiB0cnVlOw0KCX0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "728d34bd-fcc0-48cd-9daf-e3c8435a39c3",
+          "weight": 0.0,
+          "type": 99999,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "4d67e56d-008e-4da4-82ab-b6b9ac1059fb",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "КомандаШоут",
+      "group": "Шоутаути",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "f17c0e0b-9811-4998-9817-1fd757dd3d40",
+          "id": "e3ff208a-6286-4f02-8b8b-116ebd2a448d",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 2,
+          "variable": "",
+          "id": "1aca4b4a-42bc-48c3-922c-2cadd9d19d68",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "userLogin": "%targetUser%",
+          "id": "d68af71d-9da4-4708-8435-2c384e1f5644",
+          "weight": 0.0,
+          "type": 29,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "bd362119-385d-4550-a180-18ab57279812",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Умова",
+      "group": "ПершеПовідомлення",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "id": "deeba523-db06-4f20-8c47-33d20b7669eb",
+          "type": 133,
+          "enabled": true,
+          "alwaysRun": true
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "675ac423-fb8c-428e-a2fc-8f78587617a8",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "variableName": "firstMessage",
+          "operation": 0,
+          "value": "true",
+          "actionId": "e44cd20a-c6c3-46cd-be6a-3c5bf8727e05",
+          "runImmediately": true,
+          "afterAction": 1,
+          "elseActionId": "00000000-0000-0000-0000-000000000000",
+          "elseRunImmediately": true,
+          "elseAfterAction": 0,
+          "autoType": false,
+          "id": "80a34dee-ee33-45ec-9691-ecdd3581b206",
+          "weight": 0.0,
+          "type": 120,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "e44cd20a-c6c3-46cd-be6a-3c5bf8727e05",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "FM",
+      "group": "ПершеПовідомлення",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "text": "%user% FirstTimeChatter FirstTimeChatter ",
+          "preferredAccount": 0,
+          "replyId": "%msgId%",
+          "id": "3fc5146a-c190-4105-9312-b1b7c445f7dd",
+          "weight": 0.0,
+          "type": 560,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b20373f9-86ac-44c3-b817-570a61f6a812",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "RaidShoutout",
+      "group": "Шоутаути",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "min": 5,
+          "max": -1,
+          "id": "27dfe19a-2dec-4883-99eb-fcfa06a05cbc",
+          "type": 107,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "a52a9fde-18ee-4f67-952a-855de80e1516",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "userLogin": "%targetUser%",
+          "id": "1185f8e6-68e3-48a8-b964-05cd5b1da254",
+          "weight": 0.0,
+          "type": 29,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "3355ecd2-88cc-4557-a7c3-0b1215bcf0c5",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "УмоваДляАвто",
+      "group": "Шоутаути",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "username": "",
+          "isUserId": false,
+          "id": "6cb32cb6-667a-47d7-9d56-89d44f01cfb8",
+          "type": 120,
+          "enabled": true,
+          "alwaysRun": true
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "6908e512-00a3-4113-952e-dd647fde9542",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "variableName": "followerCount",
+          "operation": 5,
+          "value": "100",
+          "actionId": "7bd2613a-3062-4f3f-ba41-ae511e300e40",
+          "runImmediately": true,
+          "afterAction": 1,
+          "elseActionId": "00000000-0000-0000-0000-000000000000",
+          "elseRunImmediately": true,
+          "elseAfterAction": 0,
+          "autoType": false,
+          "id": "478d55b2-ef04-429a-9a0c-ec1ee426dcb2",
+          "weight": 0.0,
+          "type": 120,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "7bd2613a-3062-4f3f-ba41-ae511e300e40",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "AutoShout",
+      "group": "Шоутаути",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "fb9f2fd7-f1e2-4ea3-b210-f0fa76c5c28c",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "userLogin": "%targetUser%",
+          "id": "2366bf13-a3f6-474c-9288-66ce99010663",
+          "weight": 0.0,
+          "type": 29,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCglwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCgl7DQoJCXZhciB1c2VyY2xpcHMgPSBDUEguR2V0QWxsQ2xpcHMoKTsNCgkJcmV0dXJuIHRydWU7DQoJfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "079b1b1a-f140-41de-8219-b4785e8018ad",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "69d59aa1-2da3-4c92-bb42-bbf8aba2fa94",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Реєстрація",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "destination": 1,
+          "variableName": "points",
+          "persisted": true,
+          "source": 0,
+          "value": "randomNumber",
+          "id": "d3c2d3e9-9bcd-4946-bfe8-5a7f358245b2",
+          "weight": 0.0,
+          "type": 122,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "source": 1,
+          "variableName": "points",
+          "persisted": true,
+          "destinationVariable": "points",
+          "defaultValue": 0,
+          "id": "917d4932-1397-40a8-a07b-a4e0c882603b",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "text": "Ви пройшли реєстрацію! Ваша морквина складає %points% см!",
+          "preferredAccount": 0,
+          "id": "a3c5728d-3f80-4e0a-abcf-8c5486d76a8a",
+          "weight": 0.0,
+          "type": 10,
+          "group": "",
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "randomType": 0,
+          "min": 1,
+          "max": 100,
+          "id": "d3562974-fa3d-452f-910e-6f9e3eb95959",
+          "weight": 0.0,
+          "type": 1003,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "destination": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "source": 1,
+          "value": 1,
+          "id": "0c38f79e-f23b-4704-8731-31da954fff0d",
+          "weight": 0.0,
+          "type": 122,
+          "group": "",
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "source": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "destinationVariable": "isRegistered",
+          "defaultValue": 0,
+          "id": "b027e6fb-c52c-4bde-9cd9-eafa0517fb1c",
+          "weight": 0.0,
+          "type": 121,
+          "group": "",
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCglwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCgl7DQoJCXN0cmluZyB1c2VyID0gYXJnc1sidXNlciJdLlRvU3RyaW5nKCk7DQoJCXZhciBwb2ludHMgPSBDUEguR2V0VXNlclZhcjxpbnQ+KHVzZXIsICJwb2ludHMiLCB0cnVlKTsNCgkJdmFyIGxlYWRlckJvYXJkR2FtZSA9IENQSC5HZXRHbG9iYWxWYXI8RGljdGlvbmFyeTxzdHJpbmcsIGludD4+KCLQo9GH0LDRgdC90LjQutC4IiwgdHJ1ZSk7DQoJCQ0KCQkNCgkJDQoJCQ0KCQlsZWFkZXJCb2FyZEdhbWUuQWRkKHVzZXIsIHBvaW50cyk7DQoJCUNQSC5TZXRHbG9iYWxWYXIoItCj0YfQsNGB0L3QuNC60LgiLCBsZWFkZXJCb2FyZEdhbWUsIHRydWUpOw0KCQlyZXR1cm4gdHJ1ZTsNCgl9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "5a0555ad-63c4-4898-80c1-fdd60cf3aaa8",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 7
+        },
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "98f93c56-8fa2-4dd5-a42d-e422d6e4dba1",
+          "weight": 0.0,
+          "type": 50,
+          "group": "",
+          "enabled": true,
+          "index": 6
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "840acadc-35bc-440f-bf79-d258e62a66bd",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "УмоваРеєстрації",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "46c7aca6-d0a8-4601-9f47-6f19d05898ed",
+          "id": "c41d1fac-d7f3-4677-917c-fd26dd3ec8f5",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "source": 0,
+          "variableName": "pointsname",
+          "persisted": true,
+          "destinationVariable": "pointsname",
+          "defaultValue": "points",
+          "id": "d5dffc78-dd79-4671-89f8-4c95018e35c4",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "variableName": "isRegistered",
+          "operation": 0,
+          "value": "0",
+          "actionId": "69d59aa1-2da3-4c92-bb42-bbf8aba2fa94",
+          "runImmediately": true,
+          "afterAction": 0,
+          "elseActionId": "3adf02b0-76d9-4210-b626-d74c2801ae02",
+          "elseRunImmediately": true,
+          "elseAfterAction": 0,
+          "autoType": false,
+          "id": "6a3e1952-3ef8-4713-b3b7-9fe74ce50e24",
+          "weight": 0.0,
+          "type": 120,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "source": 1,
+          "variableName": "points",
+          "persisted": true,
+          "destinationVariable": "points",
+          "defaultValue": 0,
+          "id": "dccab51d-21d7-43b2-99ff-78afc748e8bd",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "source": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "destinationVariable": "isRegistered",
+          "defaultValue": 0,
+          "id": "50f1c3f1-9bcd-4b3f-9430-cac57248484c",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "3adf02b0-76d9-4210-b626-d74c2801ae02",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "ПровалРеєстрації",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [
+        {
+          "text": "Ви не пройшли реєстрацію, ви вже маєте морквину розміром %points% см",
+          "preferredAccount": 0,
+          "id": "1de96796-302c-4bfc-b5fa-82fdd471f33e",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "0114fa35-a7e8-4650-b57c-3cacb99c3031",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "бул",
+      "group": "Тест",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "174975ab-4c8d-4619-a5f0-96efe526de2c",
+          "id": "e0a6ad63-6283-477b-a82b-2961acfe1d85",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%isRegistered%",
+          "preferredAccount": 0,
+          "id": "96c45eff-e71c-49af-8e91-5e963c83598f",
+          "weight": 0.0,
+          "type": 10,
+          "group": "",
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "source": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "destinationVariable": "isRegistered",
+          "defaultValue": 0,
+          "id": "744c4de6-f28f-4aff-bf52-bc16691ac86a",
+          "weight": 0.0,
+          "type": 121,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "destination": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "source": 1,
+          "value": 1,
+          "id": "d8282f7a-dd45-4cf5-a848-130fe98611f2",
+          "weight": 0.0,
+          "type": 122,
+          "group": "",
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "cdcd986d-db7e-40eb-becc-934436f5fded",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "нобул",
+      "group": "Тест",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "11baca47-6104-46cb-a0bb-4f27ac68b8e7",
+          "id": "56a2b553-9612-4a83-a691-2ab6ac6fd1d0",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "%isRegistered%",
+          "preferredAccount": 0,
+          "id": "2b084507-efde-42a6-ba77-85e81c8722f7",
+          "weight": 0.0,
+          "type": 10,
+          "group": "",
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "destination": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "source": 1,
+          "value": 0,
+          "id": "824dc2ca-3b6f-49af-99c1-86890b6bd2f7",
+          "weight": 0.0,
+          "type": 122,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "source": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "destinationVariable": "isRegistered",
+          "defaultValue": 0,
+          "id": "599a5560-0f35-4727-b06e-c084cda763ec",
+          "weight": 0.0,
+          "type": 121,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "8d16d379-a187-4b17-aacb-38b18da7305a",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "чекбул",
+      "group": "Тест",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "ca34f4fc-72da-42c9-9c9c-3d509033e992",
+          "id": "2221b879-2499-47c9-82ce-c560a0fec79f",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "source": 1,
+          "variableName": "isRegistered",
+          "persisted": true,
+          "destinationVariable": "isRegistered",
+          "defaultValue": 0,
+          "id": "b89229ef-2a35-42ca-8e3b-fa106d503dd0",
+          "weight": 0.0,
+          "type": 121,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "text": "%isRegistered%",
+          "preferredAccount": 0,
+          "id": "adfa074a-ebcb-4961-9385-bb6b230ed4e8",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "2a937b7b-facb-4966-a6aa-77200c1d82ff",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "ВивестиТоп",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "0389813e-1d88-4640-84f1-53f053c0cfb5",
+          "id": "6e3ea635-c6e6-410a-b00f-78a6aab11d39",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQp1c2luZyBTeXN0ZW0uTGlucTsNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCglwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCgl7DQoJCXN0cmluZyB1c2VyID0gYXJnc1sidGFyZ2V0VXNlciJdLlRvU3RyaW5nKCk7DQoJCXZhciBwb2ludHMgPSBDUEguR2V0VXNlclZhcjxpbnQ+KHVzZXIsICJwb2ludHMiLCB0cnVlKTsNCgkJdmFyIGxlYWRlckJvYXJkR2FtZSA9IENQSC5HZXRHbG9iYWxWYXI8RGljdGlvbmFyeTxzdHJpbmcsIGludD4+KCLQo9GH0LDRgdC90LjQutC4IiwgdHJ1ZSk7CQkNCgkJdmFyIHNvcnRlZExlYWRlckJvYXJkID0gbGVhZGVyQm9hcmRHYW1lLk9yZGVyQnlEZXNjZW5kaW5nKHggPT4geC5WYWx1ZSk7DQoJCWludD8gaW5wdXQgPSA1Ow0KICAgICAgICAgICAgDQogICAgICAgICAgICBpZiAoKGlucHV0ID09IG51bGwpIHx8IChpbnB1dCA9PSAwKSkNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICBmb3JlYWNoICh2YXIga3ZwIGluIHNvcnRlZExlYWRlckJvYXJkKQ0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKGt2cC5LZXkgKyAiINC80LDRlCDQvNC+0YDQutCy0LjQvdGDINGA0L7Qt9C80ZbRgNC+0LwgIiArIGt2cC5WYWx1ZS5Ub1N0cmluZygpICsgIiDRgdC8Iik7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgZWxzZQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIHZhciB0b3BFbnRyaWVzID0gc29ydGVkTGVhZGVyQm9hcmQuVGFrZShpbnB1dC5WYWx1ZSk7DQogICAgICAgICAgICAgICAgZm9yZWFjaCAodmFyIGt2cCBpbiB0b3BFbnRyaWVzKQ0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKGt2cC5LZXkgKyAiINC80LDRlCDQvNC+0YDQutCy0LjQvdGDINGA0L7Qt9C80ZbRgNC+0LwgIiArIGt2cC5WYWx1ZS5Ub1N0cmluZygpICsgIiDRgdC8Iik7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICANCgkJDQoJCXJldHVybiB0cnVlOw0KCX0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "05f1d939-5144-44af-82b3-663187f15489",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "a19844ef-30ba-4db4-8e82-d811a7990c95",
+          "weight": 0.0,
+          "type": 50,
+          "group": "",
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "text": "ТОП 5 МОРКВИН:",
+          "preferredAccount": 0,
+          "id": "d867d212-ee2e-44db-98a7-4da2315d878d",
+          "weight": 0.0,
+          "type": 10,
+          "group": "",
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "58dcc885-3e2b-4773-a3cf-7d4d8c32ebfe",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "1 Start Game [ init Dictionnary ] !startGame [mod only] GameLeaderBoard v3",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "943c796a-ba05-443b-a124-d9bf0af53b74",
+          "id": "c5434bff-5604-46ed-babf-236aa8a55ec2",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "[ init Dictionary ] (Copy)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCglwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCgl7DQoJCQ0KCQlEaWN0aW9uYXJ5PHN0cmluZywgaW50PiBsZWFkZXJCb2FyZEdhbWUgPSBuZXcgRGljdGlvbmFyeTxzdHJpbmcsIGludD4oKTsNCgkJQ1BILlNldEdsb2JhbFZhcigibGVhZGVyQm9hcmRHYW1lIiwgbGVhZGVyQm9hcmRHYW1lLCB0cnVlKTsNCg0KDQoJCXJldHVybiB0cnVlOw0KCX0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "56966435-7e70-454a-90f5-5cca1b12e45a",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "text": "Viewers, to Play the Game send !joinGame to the chat ! ",
+          "preferredAccount": 0,
+          "id": "387af72b-fd83-4e1c-9bf7-6614821caa70",
+          "weight": 0.0,
+          "type": 10,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "commandId": "10939b73-db1b-4350-8fac-89e71c5074bb",
+          "state": 0,
+          "id": "90972457-a0ca-45eb-90bf-f2cd64f9155a",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "commandId": "dbb98d73-a399-4c04-a06a-0c897705183b",
+          "state": 0,
+          "id": "3777ffc3-27bf-4ad4-ab00-a0b08c237cb0",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "commandId": "3d28543c-9e76-4b1e-b074-5fb45e7c7240",
+          "state": 0,
+          "id": "6f314706-0246-46df-805a-ac674e548ea8",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "commandId": "cc85423e-0312-4153-b368-cd809b203f56",
+          "state": 0,
+          "id": "cc1e2349-f695-4e3b-8d6d-99b53c204c25",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 5
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "23475c38-d545-443b-8119-b926e51dba99",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "2 User Join Game [ add user to Dictionnary ] !joinGame GameLeaderBoard v3",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "10939b73-db1b-4350-8fac-89e71c5074bb",
+          "id": "c478c92d-cddf-4051-9c3f-ee3e4e79fe78",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "b33939a7-a2ec-4a8b-b93e-d8f89f10b312",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "[ add user to Dictionary ] (Copy)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\netstandard.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHN0cmluZyB1c2VyID0gYXJnc1sidXNlciJdLlRvU3RyaW5nKCk7DQogICAgICAgIGludCBwcmVzZW50c0RvbmF0ZWQgPSAwOw0KICAgICAgICB2YXIgbGVhZGVyQm9hcmRHYW1lID0gQ1BILkdldEdsb2JhbFZhcjxEaWN0aW9uYXJ5PHN0cmluZywgaW50Pj4oImxlYWRlckJvYXJkR2FtZSIsIHRydWUpOw0KICAgICAgICAvL0NQSC5TZW5kTWVzc2FnZSgicGxheWVyIG51bWJlciA6ICIgKyBsZWFkZXJCb2FyZEdhbWUuQ291bnQpOw0KDQoJCS8vIGpvaW4gZ2FtZSBpZiB1c2VyIGlzIG5vdCBpbiBrdnAgDQoJCWludCBwbGF5ZXJDb3VudCA9IGxlYWRlckJvYXJkR2FtZS5Db3VudCsxOw0KICAgICAgICBmb3JlYWNoIChLZXlWYWx1ZVBhaXI8c3RyaW5nLCBpbnQ+IGt2cCBpbiBsZWFkZXJCb2FyZEdhbWUpDQogICAgICAgIHsNCiAgICAgICAgICAgIGlmIChrdnAuS2V5ID09IHVzZXIpDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKHVzZXIgKyAiLCB5b3UgYWxyZWFkeSBoYXZlIGVudGVyZWQgdGhlIEdhbWUiKTsNCiAgICAgICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgICAgICB9DQoJCX0NCg0KICAgICAgICAgICAgICAgIGxlYWRlckJvYXJkR2FtZS5BZGQodXNlciwgcHJlc2VudHNEb25hdGVkKTsNCiAgICAgICAgICAgICAgICBDUEguU2V0R2xvYmFsVmFyKCJsZWFkZXJCb2FyZEdhbWUiLCBsZWFkZXJCb2FyZEdhbWUsIHRydWUpOw0KICAgICAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZSh1c2VyICsgIiBpcyBqb2luaW5nIHRoZSBHYW1lIik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "270a4615-de93-4e6d-8fe2-06576b225aa6",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "4559abaa-c1e6-43fc-8384-7282b44fd31c",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "3 Mod Give Points [ add int point to dictionary ] !givePts # @userName GameLeaderBoard v3",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "dbb98d73-a399-4c04-a06a-0c897705183b",
+          "id": "ebbd9008-a7cc-4199-b5fc-ad613cd5b342",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 3,
+          "variable": "input1",
+          "id": "d12ee2df-5f74-4089-8d59-c0d3c10b880d",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "[ add int point to dictionary ]  (Copy)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vDQovLy0tTW9kIEdpdmUgUG9pbnRzLS0vLw0KLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8NCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHN0cmluZyB1c2VyID0gYXJnc1sidGFyZ2V0VXNlciJdLlRvU3RyaW5nKCk7DQogICAgICAgIGludCBwdHNOdW1iZXIgPSBDb252ZXJ0LlRvSW50MzIoYXJnc1siaW5wdXQwIl0uVG9TdHJpbmcoKSk7DQogICAgICAgIHZhciBsZWFkZXJCb2FyZEdhbWUgPSBDUEguR2V0R2xvYmFsVmFyPERpY3Rpb25hcnk8c3RyaW5nLCBpbnQ+PigibGVhZGVyQm9hcmRHYW1lIiwgdHJ1ZSk7DQogICAgICAgIGZvcmVhY2ggKHZhciBrdnAgaW4gbGVhZGVyQm9hcmRHYW1lKQ0KICAgICAgICB7DQogICAgICAgICAgICBpZiAoa3ZwLktleSA9PSB1c2VyKQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIGxlYWRlckJvYXJkR2FtZVt1c2VyXSArPSBwdHNOdW1iZXI7DQogICAgICAgICAgICAgICAgQ1BILlNldEdsb2JhbFZhcigibGVhZGVyQm9hcmRHYW1lIiwgbGVhZGVyQm9hcmRHYW1lLCB0cnVlKTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "341956b6-db9a-438d-beb0-dbcafd2fac1a",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "785ca146-ac68-4e08-b8a4-bb1f8352c6dc",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "4 ScoreBoard !scoreBoard ( return all score for each players ) GameLeaderBoard v3",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "3d28543c-9e76-4b1e-b074-5fb45e7c7240",
+          "id": "d639c0fb-1e80-4014-ae36-89ddaa70da70",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "291e6b08-03b4-4624-8a9f-fa0fa3418d55",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "[ get value (points) from key (user) from Dictionnary ] (Copy 2)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIA0KICAgICAgICB2YXIgbGVhZGVyQm9hcmRHYW1lID0gQ1BILkdldEdsb2JhbFZhcjxEaWN0aW9uYXJ5PHN0cmluZywgaW50Pj4oImxlYWRlckJvYXJkR2FtZSIsIHRydWUpOw0KDQogICAgICAgIGZvcmVhY2ggKHZhciBrdnAgaW4gbGVhZGVyQm9hcmRHYW1lKQ0KICAgICAgICB7DQogICAgICAgICAgICBDUEguU2VuZE1lc3NhZ2Uoa3ZwLktleSArICIgaGF2ZSAiICsga3ZwLlZhbHVlLlRvU3RyaW5nKCkgKyAiIHBvaW50cyIpOw0KICAgICAgICB9DQogICAgICAgIGlmIChsZWFkZXJCb2FyZEdhbWU9PW51bGwpDQoJCXsNCgkJCUNQSC5TZW5kTWVzc2FnZSgibm8gcGxheWVyIGpvaW5lZCB0aGUgR2FtZSB5ZXQiKTsNCgkJCQ0KCQkJfQ0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "608f7130-735e-45d2-b869-8613957cf2d4",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "f5e350b6-2130-4c8d-b0df-e9b0bb3bd846",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "5 Winner !winner ( return highest score )  GameLeaderBoard v3",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "cc85423e-0312-4153-b368-cd809b203f56",
+          "id": "d74c01b2-2b3b-4ca5-bb76-71b803ea64a6",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "c9bbe879-2641-4def-ae77-21c80c5f2dcc",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "[ get value (points) from key (user) from Dictionnary ] ",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Linq.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkxpbnE7DQp1c2luZyBTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYzsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAJQ1BILlNlbmRNZXNzYWdlKCJHYW1lIGlzIE92ZXIsIFJlc3VsdHMgOiIpOw0KICAgIAkNCiAgICAgICAgdmFyIGxlYWRlckJvYXJkR2FtZSA9IENQSC5HZXRHbG9iYWxWYXI8RGljdGlvbmFyeTxzdHJpbmcsIGludD4+KCJsZWFkZXJCb2FyZEdhbWUiLCB0cnVlKTsNCiAgICAgICAgTGlzdDxzdHJpbmc+IGxzdCA9IG5ldyBMaXN0PHN0cmluZz4oKTsNCg0KICAgICAgICB2YXIgbWF4VmFsdWUgPSBsZWFkZXJCb2FyZEdhbWUuQWdncmVnYXRlKCh4LCB5KSA9PiB4LlZhbHVlID4geS5WYWx1ZSA/IHggOiB5KS5WYWx1ZTsNCiAgICAgICAgZm9yZWFjaCAoS2V5VmFsdWVQYWlyPHN0cmluZywgaW50PiBwYWlyIGluIGxlYWRlckJvYXJkR2FtZSkNCiAgICAgICAgew0KICAgICAgICAgICAgaWYgKEVxdWFsaXR5Q29tcGFyZXI8aW50Pi5EZWZhdWx0LkVxdWFscyhwYWlyLlZhbHVlLCBtYXhWYWx1ZSkpDQogICAgICAgICAgICB7DQogICAgICAgICAgICAJc3RyaW5nIGsgPSBwYWlyLktleTsNCiAgICAgICAgICAgICAgICBsc3QuQWRkKGspOw0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQoNCiAgICAgICAgaWYgKGxzdC5Db3VudCA+IDEpDQogICAgICAgIHsNCiAgICAgICAgICAgIGZvcmVhY2ggKEtleVZhbHVlUGFpcjxzdHJpbmcsIGludD4gcGFpciBpbiBsZWFkZXJCb2FyZEdhbWUpDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgaWYgKEVxdWFsaXR5Q29tcGFyZXI8aW50Pi5EZWZhdWx0LkVxdWFscyhwYWlyLlZhbHVlLCBtYXhWYWx1ZSkpDQogICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICBzdHJpbmcga2V5ID0gcGFpci5LZXk7DQogICAgICAgICAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZShrZXkgKyAiIHdpbiAiKTsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgIH0NCgkJZWxzZQ0KCQl7DQogICAgICAgIHZhciBrZXlPZk1heFZhbHVlID0gbGVhZGVyQm9hcmRHYW1lLkFnZ3JlZ2F0ZSgoeCwgeSkgPT4geC5WYWx1ZSA+IHkuVmFsdWUgPyB4IDogeSkuS2V5Ow0KICAgICAgICBDUEguU2VuZE1lc3NhZ2UoInRoZSB3aW5uZXIgaXMgOiAiICsga2V5T2ZNYXhWYWx1ZSk7DQoJCX0NCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "3bfd8ba6-2470-4714-8d07-fb0e2e13d86a",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "commandId": "10939b73-db1b-4350-8fac-89e71c5074bb",
+          "state": 1,
+          "id": "eb5b01e4-0431-49f8-afe4-3223e84ecd7d",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "commandId": "dbb98d73-a399-4c04-a06a-0c897705183b",
+          "state": 1,
+          "id": "4fcc9b27-b208-4b2f-ab2e-cae7ca3c8eda",
+          "weight": 0.0,
+          "type": 9,
+          "group": null,
+          "enabled": true,
+          "index": 3
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "4bc7f407-7484-4f7d-8f35-1272cf76ebcc",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "4Bis LeaderBoard !leaderoard ( return all score for each players ) GameLeaderBoard v3 ",
+      "group": "GameLeaderBoard v3",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "fd211675-ab53-4715-a4ab-0d5dc446770a",
+          "id": "cbe3c032-2cfa-4b0f-859f-9ad8f76e5568",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sourceType": 1,
+          "variable": "",
+          "id": "7d07aa1e-3c33-43de-915f-e3ed07f1cf0b",
+          "weight": 0.0,
+          "type": 50,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "[ get value (points) from key (user) from Dictionnary ] (Copy 2) (Copy)",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQp1c2luZyBTeXN0ZW0uTGlucTsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCnN0cmluZyByYXdJbnB1dFZhbHVlID0gYXJncy5Db250YWluc0tleSgicmF3SW5wdXQiKSA/IGFyZ3NbInJhd0lucHV0Il0uVG9TdHJpbmcoKSA6IG51bGw7DQoNCg0KaW50PyBpbnB1dCA9ICFzdHJpbmcuSXNOdWxsT3JFbXB0eShyYXdJbnB1dFZhbHVlKQ0KICAgID8gQ29udmVydC5Ub0ludDMyKHJhd0lucHV0VmFsdWUpDQogICAgOiAoaW50PyludWxsOw0KICAgICAgICB2YXIgbGVhZGVyQm9hcmRHYW1lID0gQ1BILkdldEdsb2JhbFZhcjxEaWN0aW9uYXJ5PHN0cmluZywgaW50Pj4oImxlYWRlckJvYXJkR2FtZSIsIHRydWUpOw0KICAgICAgICBpZiAobGVhZGVyQm9hcmRHYW1lID09IG51bGwgfHwgbGVhZGVyQm9hcmRHYW1lLkNvdW50ID09IDApDQogICAgICAgIHsNCiAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZSgiTm8gcGxheWVyIGpvaW5lZCB0aGUgZ2FtZSB5ZXQiKTsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlDQogICAgICAgIHsNCiAgICAgICAgICAgIHZhciBzb3J0ZWRMZWFkZXJCb2FyZCA9IGxlYWRlckJvYXJkR2FtZS5PcmRlckJ5RGVzY2VuZGluZyh4ID0+IHguVmFsdWUpOw0KICAgICAgICAgICAgDQogICAgICAgICAgICBpZiAoKGlucHV0ID09IG51bGwpIHx8IChpbnB1dCA9PSAwKSkNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICBmb3JlYWNoICh2YXIga3ZwIGluIHNvcnRlZExlYWRlckJvYXJkKQ0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgQ1BILlNlbmRNZXNzYWdlKGt2cC5LZXkgKyAiIGhhcyAiICsga3ZwLlZhbHVlLlRvU3RyaW5nKCkgKyAiIHBvaW50cyIpOw0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIGVsc2UNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICB2YXIgdG9wRW50cmllcyA9IHNvcnRlZExlYWRlckJvYXJkLlRha2UoaW5wdXQuVmFsdWUpOw0KICAgICAgICAgICAgICAgIGZvcmVhY2ggKHZhciBrdnAgaW4gdG9wRW50cmllcykNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgIENQSC5TZW5kTWVzc2FnZShrdnAuS2V5ICsgIiBoYXMgIiArIGt2cC5WYWx1ZS5Ub1N0cmluZygpICsgIiBwb2ludHMiKTsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgIH0NCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "fe11c390-9f6c-4f63-ba5d-b90918295471",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "bf174858-1262-4a15-8ec0-73545740ffa3",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "СтворитиСписок",
+      "group": "Єбобо",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "commandId": "0b33563e-b809-484f-ad96-da72c2ef1193",
+          "id": "509851b9-d0a6-4641-bd60-80b517ec39e8",
+          "type": 401,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQoJcHVibGljIGJvb2wgRXhlY3V0ZSgpDQoJew0KCQlEaWN0aW9uYXJ5PHN0cmluZywgaW50PiBsZWFkZXJCb2FyZEdhbWUgPSBuZXcgRGljdGlvbmFyeTxzdHJpbmcsIGludD4oKTsNCgkJQ1BILlNldEdsb2JhbFZhcigi0KPRh9Cw0YHQvdC40LrQuCIsIGxlYWRlckJvYXJkR2FtZSwgdHJ1ZSk7DQoJCXJldHVybiB0cnVlOw0KCX0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "ce5dfac3-3efd-44c1-a6c6-56f1902e255f",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "69582a93-993d-4998-9f20-62cd25d63c10",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Для Бумласка",
+      "group": "ПершеПовідомлення",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "username": "bumlaska",
+          "isUserId": false,
+          "id": "06ba4992-a89a-40a8-b53e-7b48c63f8256",
+          "type": 120,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "text": "trembaaHey Бумласка! trembaaIDI ",
+          "preferredAccount": 1,
+          "replyId": "%msgId%",
+          "id": "01a7c769-865c-4826-8244-ae9f46a9aee8",
+          "weight": 0.0,
+          "type": 560,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "47210f07-893f-4109-a194-54ed87751585",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "шрек",
+      "group": "Для камери",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "rewardId": "b81015ec-892e-4470-995f-7de3fdb4e2e3",
+          "id": "b0d2b9bc-3cb5-41ee-9365-ebf7b47ed646",
+          "type": 112,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "filterName": "Шрек",
+          "state": 0,
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "7ecf56d3-11c4-45ac-838c-66c86bd1b7be",
+          "weight": 0.0,
+          "type": 35,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "value": 60000,
+          "maxValue": 0,
+          "random": false,
+          "id": "c6fb939a-4bd6-4de1-8484-12cf31c4025b",
+          "weight": 0.0,
+          "type": 1002,
+          "group": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "Гра",
+          "sourceName": "Вебкамера",
+          "connectionId": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+          "id": "19514c82-697d-442c-88e5-ec83368f6940",
+          "weight": 0.0,
+          "type": 41,
+          "group": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "9d43e71d-9e33-4d37-821e-9d0b9866dea3",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Зум",
+      "group": "Для камери",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "actions": [],
+      "actionGroups": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b9cdf4c2-c921-41ef-8b7d-a4aedb7aab7c",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "name": "Launch Log",
+      "group": "",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "id": "64f20da0-6382-45a9-8100-609e137ddf91",
+          "type": 706,
+          "enabled": true,
+          "alwaysRun": false
+        }
+      ],
+      "actions": [
+        {
+          "name": "Open Log",
+          "description": "",
+          "keepAlive": false,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLklPOw0KdXNpbmcgU3lzdGVtLkRpYWdub3N0aWNzOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KDQogICAgICAgIHZhciBiYXNlRGlyZWN0b3J5ID0gQXBwRG9tYWluLkN1cnJlbnREb21haW4uQmFzZURpcmVjdG9yeTsNCiAgICAgICAgDQogICAgICAgIERhdGVUaW1lIGRhdGVjb2RlID0gRGF0ZVRpbWUuTm93Ow0KICAgICAgICBzdHJpbmcgeWVhciA9IGRhdGVjb2RlLlRvU3RyaW5nKCJ5eXl5Iik7DQogICAgICAgIHN0cmluZyBtb250aCA9IGRhdGVjb2RlLlRvU3RyaW5nKCJNTSIpOw0KICAgICAgICBzdHJpbmcgZGF5ID0gZGF0ZWNvZGUuVG9TdHJpbmcoImRkIik7DQogICAgICAgIA0KICAgICAgICBzdHJpbmcgZmlsZW5hbWUgPSAkImxvZ197eWVhcn17bW9udGh9e2RheX0ubG9nIjsNCiAgICAgICAgDQogICAgICAgIHN0cmluZyBwYXRoID0gUGF0aC5Db21iaW5lKGJhc2VEaXJlY3RvcnksICJsb2dzIiwgZmlsZW5hbWUpOw0KICAgICAgICANCiAgICAgICAgUHJvY2Vzcy5TdGFydCgicG93ZXJzaGVsbC5leGUiLCAkIkdldC1Db250ZW50IC1QYXRoICd7cGF0aH0nIC1UYWlsIDUwIC1XYWl0Iik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": true,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": "",
+          "id": "51e07429-0221-42da-8193-292398d9b42e",
+          "weight": 0.0,
+          "type": 99999,
+          "group": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "actionGroups": [],
+      "collapsedGroups": []
+    }
+  ]
+}

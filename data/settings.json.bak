@@ -1,0 +1,276 @@
+{
+  "windowSettings": {
+    "hiddenTabs": [],
+    "hiddenSettingsTabs": [],
+    "hiddenPlatformsTabs": [],
+    "hiddenBroadcastersTabs": [],
+    "hiddenIntegrationsTabs": [],
+    "tabOrder": [
+      "tpViewers",
+      "tpActions",
+      "tpActionQueues",
+      "tpCommands",
+      "tpPlatforms",
+      "tpBroadcasters",
+      "tpIntegrations",
+      "tpMidi",
+      "tpSpeechToText",
+      "tpHotKeys",
+      "tpServersClients",
+      "tpSettings"
+    ],
+    "tabSettingsOrder": [
+      "tpUserInterface",
+      "tpGeneral",
+      "tpSettingsLabs",
+      "tpGroups",
+      "tpFileWatcher",
+      "tpTimedActions",
+      "tpCredits",
+      "tpQuotes",
+      "tpCompilerSettings"
+    ],
+    "tabPlatformsOrder": [],
+    "tabBroadcastersOrder": [],
+    "tabIntegrationsOrder": [],
+    "actionQueueConfig": {
+      "sort": 4,
+      "sortOrder": 2,
+      "columnWidths": "147,85,60,55,145,145,145"
+    },
+    "actionQueueHistoryConfig": {
+      "sort": 7,
+      "sortOrder": 2,
+      "columnWidths": "147,85,60,60,145,145,145,145"
+    },
+    "favoriteSubActions": [
+      "OBS|Sources|Rotate Source"
+    ],
+    "favoriteTriggers": [],
+    "defaultCommentColor": "#229977",
+    "subActionDisabledColor": "#DB7093",
+    "width": 1004,
+    "height": 532,
+    "actionDeleteNoConfirm": true,
+    "subActionDeleteNoConfirm": true,
+    "subActionGroupDeleteAllNoConfirm": false,
+    "subActionDeleteAllNoConfirm": true,
+    "quoteDeleteNoConfirm": false,
+    "commandDeleteNoConfirm": true,
+    "triggerDeleteNoConfirm": true,
+    "triggerDeleteAllNoConfirm": false,
+    "minimizeToTray": false,
+    "closeConfirmation": false,
+    "executeCodeDialogWidth": 825,
+    "executeCodeDialogHeight": 594,
+    "actionsSplitter": 469,
+    "variableWindowWidth": 1207,
+    "variableWindowHeight": 850,
+    "variableNameWidth": 250,
+    "variableValueWidth": 350,
+    "triggerSplitter": 124,
+    "globalWindowLeft": 429,
+    "globalWindowTop": 283,
+    "globalWindowRight": 1245,
+    "globalWindowBottom": 772,
+    "globalDeleteNoConfirm": true
+  },
+  "labs": {
+    "oldQueue": false
+  },
+  "pyramid": {
+    "enabled": false,
+    "minPyramidWidth": 2
+  },
+  "quotes": {
+    "enabled": false,
+    "allowSubscribers": false,
+    "addPermission": 3
+  },
+  "subCounter": {
+    "enabled": false,
+    "rollover": 0,
+    "outputFile": "F:\\streamerbot\\data\\subcounter.txt",
+    "outputText": "%subCounter% of %rollover% (%rolloverCount%)",
+    "subCount": 0,
+    "rolloverCount": 0
+  },
+  "hotKeySettings": {
+    "collapsedGroups": [],
+    "hotKeys": []
+  },
+  "eventSettings": {
+    "presentViewersEnabled": false,
+    "presentViewersInterval": 5,
+    "giftSubIgnoreFromGiftBomb": true
+  },
+  "timedActions": {
+    "timers": [
+      {
+        "id": "77778a31-c1be-4e7a-b4b3-b967e31245c7",
+        "name": "asd",
+        "enabled": true,
+        "repeat": true,
+        "interval": 0,
+        "randomInterval": false,
+        "upperInterval": 0,
+        "lines": 0,
+        "counter": 0
+      }
+    ]
+  },
+  "fileWatcherSettings": {
+    "watchers": []
+  },
+  "speechToText": {
+    "commands": [],
+    "autoStart": false,
+    "audioDevice": null,
+    "confidenceThreshold": 0.0,
+    "locale": null,
+    "logSpokenText": false
+  },
+  "websockets": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 8080,
+    "endpoint": "/",
+    "connections": [],
+    "servers": []
+  },
+  "udp": {
+    "autoStart": false,
+    "port": 4242
+  },
+  "http": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 7474
+  },
+  "credits": {
+    "creditEvents": [],
+    "rolesPresent": [],
+    "groupPresent": [],
+    "topEvents": [],
+    "autoReset": 12
+  },
+  "youTube": {
+    "presentViewersInterval": 5,
+    "botAutoConnect": false,
+    "acceptedTerms": true,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "streamlabs": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "streamElements": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "donorDrives": {
+    "settings": []
+  },
+  "pulsoid": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "hypeRate": {
+    "hypeRateId": null,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "tipeeeStream": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "treatStream": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "lumiaStream": {
+    "socketToken": null,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "crowdcontrol": {
+    "autoConnect": false,
+    "autoReconnect": false
+  },
+  "website": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "compilerSettings": {
+    "commonReferences": [
+      "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll"
+    ],
+    "autoCompleteClosing": true
+  },
+  "version": 26,
+  "instanceId": "535937e1-aff0-4893-9158-449da1e9620f",
+  "instanceName": "Streamer.bot",
+  "logLevel": 1,
+  "streamUpdateOnConnect": false,
+  "updateChannel": "stable",
+  "lastVersion": "0.2.2",
+  "obsSettings": {
+    "connections": [
+      {
+        "id": "3ec16dab-6241-4abb-aa8a-8aab017cfecc",
+        "name": "OBS",
+        "obsVersion": 1,
+        "host": "127.0.0.1",
+        "port": 4455,
+        "autoConnect": true,
+        "reconnectOnDisconnect": true,
+        "password": "jfsd8EVkgQQUGaI9",
+        "retryInterval": 30,
+        "default": false
+      }
+    ]
+  },
+  "slobsSettings": {
+    "connections": []
+  },
+  "polyPopServerSettings": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 9652,
+    "endpoint": "/"
+  },
+  "voiceModSettings": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "streamDeckSettings": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 8059
+  },
+  "vTubeStudioSettings": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "address": "localhost",
+    "port": 8001
+  },
+  "elgatoSettings": {
+    "waveLinkAutoConnect": false,
+    "waveLinkAutoReconnect": false
+  },
+  "defaultAudioDevice": null,
+  "volume": 1.0,
+  "audioUseSystemDefault": true,
+  "firstWordsAutoReset": 12
+}
